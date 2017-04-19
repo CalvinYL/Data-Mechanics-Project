@@ -1,5 +1,5 @@
-#
-Enter 'cyung20_kwleung' directory to see the completed project
+# Enter 'cyung20_kwleung' directory to see the completed project
+
 
 # course-2016-fal-proj
 Project repository for the course project in the Fall 2016 iteration of the Data Mechanics course at Boston University.
