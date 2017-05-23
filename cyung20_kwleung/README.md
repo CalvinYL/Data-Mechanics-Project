@@ -2,7 +2,7 @@
 
 Below is our initial project proposal, a list of the datasets we looked at and used, transformations performed on our datasets, and constraint satisfaction + statistical analysis implementations - all written in python.
 
-#Project Proposal
+# Project Proposal
 
 For our project, we will be looking at Crime Incident Reports, as released by the City of Boston, and linking them to various other datasets to see if we can determine how safe areas might be based on the businesses, public services, etc. that encompass these areas. This may be used by anyone to estimate how safe they may be wherever they are, provided they are near one of the variables we analyze. In particular, we will be looking at the following datasets: Crime Incident Reports (made between August 2015 to now); businesses that have a liquor license; and the locations of all Boston Police District Stations.
 
@@ -12,7 +12,8 @@ Below are the following techniques we have implemented in order to further addre
 
 2) A statistical analysis we thought about doing is seeing whether the time of day might have an influence on when a crime is committed. We began by counting the number of crimes (from the crime incident reports dataset) that occurred at every hour of the day. For reference, we recorded the hours in military time (ie. from our hour range 0-23: 0 represents 12 AM, 12 represents 12 PM, 17 represents 5 PM, etc). After compiling the results into two vectors (with the hours in one and each hours' corresponding crime counts in the other), we proceeded to calculate their correlation coefficient in order to determine how strong of a correlation the two variables have.
 
-#Datasets Being Looked At
+# Datasets Being Looked At
+
 **1. MBTA T Stop Locations**
 
 JSON file containing every MBTA T stop with their station names, coordinates (longitude + latitude), URL to their MBTA information pages, which line they belong to, and addresses. Data taken from http://erikdemaine.org/maps/mbta/, and stored on datamechanics.io for retrieval.<br>
@@ -44,7 +45,7 @@ This will be used to see how often crimes were committed near Boston Police Dist
 
 To retrieve information from each dataset, run mbtaLocations.py, crimeReports.py, liquorLicenses.py, streetlightLocations.py, and BPDStations.py, respectively.
 
-#Project 1: Transformations
+# Project 1: Transformations
 
 **1. liquorAndCrime.py**
 
@@ -59,7 +60,7 @@ This transformation looks for liquor stores that do not have a Boston Police Dis
 
 This algorithm retrieves the districts in which crime incidents have been reported (as recorded by the Crime Incident Report dataset), counts how many crimes transpired in each individual district, then adds the counts to the pre-existing BPDS database with their corresponding districts.
 
-#Project 2: Constraint Satisfaction and Statistical Analysis
+# Project 2: Constraint Satisfaction and Statistical Analysis
 
 **1. liquorAndCrime.py** 
 
